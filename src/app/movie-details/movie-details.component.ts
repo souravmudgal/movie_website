@@ -11,7 +11,7 @@ export class MovieDetailsComponent implements OnInit {
 
   constructor( private router:ActivatedRoute, private moiveService:MoivesListService) { }
 
-  movieDetails:any;
+  movieDetails:any=[];
 
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id);
