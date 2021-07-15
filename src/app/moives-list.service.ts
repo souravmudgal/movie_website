@@ -1,41 +1,21 @@
 import { Injectable } from '@angular/core';
+import{HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
 export class MoivesListService {
 
-  constructor() { }
+  url=" http://localhost:3000/movie_li";
+  constructor(private http:HttpClient) { }
 
-  movies_service=[
 
-    {
-     id:1, 
-     movie_title:"avenger",
-     img:"../../assets/avenger.png",
-     button:"More Details"
-   },
-   {
-     id:2, 
-     movie_title:"avenger2",
-     img:"../../assets/avenger.png",
-     button:"More Details"
-   },
-   {
-     id:3, 
-     movie_title:"avenger3",
-     img:"../../assets/avenger.png",
-     button:"More Details"
-   }
-   ];
  
 getMovies(){
-  return this.movies_service;
+return this.http.get(this.url);;
 }
 
 getMoviesId(id:any){
-  return this.movies_service.find(value=>{
-    return value.id===id;
-  });
+  return this.http.get(`${this.url}/${id}`);
 }
 
 }

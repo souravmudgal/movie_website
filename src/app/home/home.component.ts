@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 export interface movie_list_name{
   movie_title:string,
   img:string,
-  button:string
+  button:string,
+  detailes:string,
+  bracket:string,
+  date:number
 }
 import {MoivesListService} from '../moives-list.service';
 
@@ -18,7 +21,10 @@ export class HomeComponent implements OnInit {
   movies_name:any=[];
  
   ngOnInit(): void {
-this.movies_name= this.moiveService.getMovies();
+this.moiveService.getMovies().subscribe(result=>{
+  this.movies_name= result;
+  console.log(result);
+});
 
 
 

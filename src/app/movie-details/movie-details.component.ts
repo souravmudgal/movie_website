@@ -11,13 +11,15 @@ export class MovieDetailsComponent implements OnInit {
 
   constructor( private router:ActivatedRoute, private moiveService:MoivesListService) { }
 
-  movieDetails:any;
+  movieDetails:any={};
 
   ngOnInit(): void {
     console.log(this.router.snapshot.params.id);
 
-    this.movieDetails= this.moiveService.getMoviesId(this.router.snapshot.params.id);
-    console.log(this.movieDetails);
+     this.moiveService.getMoviesId(this.router.snapshot.params.id).subscribe(result=>{
+       this.movieDetails= result;
+       console.log(result);
+     })
 
   }
 
