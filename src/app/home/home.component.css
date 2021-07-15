@@ -1,0 +1,13 @@
+.card-title{
+    text-align: center;
+}
+
+.card{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:0px 0px 5.9px 0.1px;
+}
+.card-img-top{
+    
+    border-top-left-radius: 5px;
+}
