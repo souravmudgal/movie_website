@@ -38,23 +38,10 @@ export class HomeComponent implements OnInit {
   movies_name: MovieListName | undefined;
 
   ngOnInit(): void {
-    this.moiveService.getMovies().subscribe((result) => {
+    this.moiveService.getMovies(1).subscribe((result) => {
       this.movies_name = result;
       console.log(this.movies_name.results[0].poster_path);
 
     });
   }
 }
-
-// interface something {
-//   video: [
-//     { name: 'rishabh' },
-//     { name: 'rishabh' },
-//     { name: 'rishabh' },
-//     { name: 'rishabh' }
-//   ];
-// }
-
-// interface something2 {
-//   video: { name: 'rishabh' }[];
-// }
