@@ -1,19 +1,21 @@
-<div class="container" style="background-color: rgb(255, 255, 255);">
-    <div class="row  justify-content-between"  > 
+<div class="home">
+  <div class="container" class="home">
+    <div class="row  justify-content-between">
 
-<div class=" col-sm-12 col-md-4" *ngFor="let film of movies_name">
-    <div class="card mt-5" style="width: 14rem; height: 22rem;">
-        <img src="{{film.img}}" class="card-img-top" alt="..."  height="250px">
-        <div class="card-body">
-          <h5 class="card-title">{{film.movie_title}}</h5>
-        </div>
-       
-        <div class="card-body">
-          <a routerLink="/movieDetails/{{film.id}}">{{film.button}}</a>
-          
+      <div class=" col-sm-6 col-md-3 col-xs-12" *ngFor="let film of movies_name">
+        <div class="card mt-5" style="width: 14rem; height: 22rem;">
+          <img src="{{film.poster_path}}" class="card-img-top" alt="..." height="250px">
+          <div class="card-body">
+            <h5 style="color: white;" class="card-title">{{film.title}}</h5>
+          </div>
+
+          <div class="card-body">
+            <!-- <a routerLink="/movieDetails/{{film.id}}">{{film.button}}</a> -->
+
+          </div>
         </div>
       </div>
-</div>
     </div>
-</div>
+  </div>
 
+</div>

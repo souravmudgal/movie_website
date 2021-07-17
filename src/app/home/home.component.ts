@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 export interface movie_list_name{
-  movie_title:string,
-  img:string,
-  button:string,
-  detailes:string,
-  bracket:string,
-  date:number
+  title:string,
+  poster_path:string,
+  release_date:number,
+  overview:string,
+  detailes:string
 }
 import {MoivesListService} from '../moives-list.service';
 
@@ -24,6 +23,7 @@ export class HomeComponent implements OnInit {
 this.moiveService.getMovies().subscribe(result=>{
   this.movies_name= result;
   console.log(result);
+  
 });
 
 
