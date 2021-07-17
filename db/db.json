@@ -1,190 +1,184 @@
 {
-
-
-   "movie_li":[ {
-        "id":1, 
-        "movie_title":"AVENGER",
-        "img":"../../assets/avenger.png",
-        "button":"More Details",
-        "detailes":"Avenger",
-        "bracket":"The World best movie",
-        "date":2008
-
-      },
-      {
-        "id":2, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"The Dark Knight",
-        "bracket":"The World best movie",
-        "date":2005
-      },
-      {
-        "id":3, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2003
-      },
-      {
-        "id":4, 
-        "movie_title":"BLACJWIDO",
-        "img":"../../assets/blackwido.jpg",
-        "button":"More Details",
-        "detailes":"BlackWideo of the World",
-        "bracket":"The World best movie",
-        "date":2001
-      },
-      {
-        "id":5, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":6, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":7, 
-        "movie_title":"AVENGER",
-        "img":"../../assets/avenger.png",
-        "button":"More Details",
-        "detailes":"Avenger",
-        "bracket":"The World best movie",
-        "date":2008
-
-      },
-      {
-        "id":8, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"The Dark Knight",
-        "bracket":"The World best movie",
-        "date":2005
-      },
-      {
-        "id":9, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2003
-      },
-      {
-        "id":10, 
-        "movie_title":"BLACJWIDO",
-        "img":"../../assets/blackwido.jpg",
-        "button":"More Details",
-        "detailes":"BlackWideo of the World",
-        "bracket":"The World best movie",
-        "date":2001
-      },
-      {
-        "id":11, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":12, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":13, 
-        "movie_title":"AVENGER",
-        "img":"../../assets/avenger.png",
-        "button":"More Details",
-        "detailes":"Avenger",
-        "bracket":"The World best movie",
-        "date":2008
-
-      },
-      {
-        "id":14, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"The Dark Knight",
-        "bracket":"The World best movie",
-        "date":2005
-      },
-      {
-        "id":15, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2003
-      },
-      {
-        "id":16, 
-        "movie_title":"BLACJWIDO",
-        "img":"../../assets/blackwido.jpg",
-        "button":"More Details",
-        "detailes":"BlackWideo of the World",
-        "bracket":"The World best movie",
-        "date":2001
-      },
-      {
-        "id":17, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":18, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":19, 
-        "movie_title":"JOKER",
-        "img":"../../assets/joker.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      },
-      {
-        "id":20, 
-        "movie_title":"SPIDERMAN-3",
-        "img":"../../assets/spider.jpg",
-        "button":"More Details",
-        "detailes":"Spider of the World",
-        "bracket":"The World best movie",
-        "date":2007
-      }
-    ]
-
-
-      }
+  "movie_li": [
+    {
+      "id": 1,
+      "movie_title": "AVENGER",
+      "img": "../../assets/avenger.png",
+      "button": "More Details",
+      "detailes": "Avenger",
+      "bracket": "The World best movie",
+      "date": 2008
+    },
+    {
+      "id": 2,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "The Dark Knight",
+      "bracket": "The World best movie",
+      "date": 2005
+    },
+    {
+      "id": 3,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2003
+    },
+    {
+      "id": 4,
+      "movie_title": "BLACJWIDO",
+      "img": "../../assets/blackwido.jpg",
+      "button": "More Details",
+      "detailes": "BlackWideo of the World",
+      "bracket": "The World best movie",
+      "date": 2001
+    },
+    {
+      "id": 5,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 6,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 7,
+      "movie_title": "AVENGER",
+      "img": "../../assets/avenger.png",
+      "button": "More Details",
+      "detailes": "Avenger",
+      "bracket": "The World best movie",
+      "date": 2008
+    },
+    {
+      "id": 8,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "The Dark Knight",
+      "bracket": "The World best movie",
+      "date": 2005
+    },
+    {
+      "id": 9,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2003
+    },
+    {
+      "id": 10,
+      "movie_title": "BLACJWIDO",
+      "img": "../../assets/blackwido.jpg",
+      "button": "More Details",
+      "detailes": "BlackWideo of the World",
+      "bracket": "The World best movie",
+      "date": 2001
+    },
+    {
+      "id": 11,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 12,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 13,
+      "movie_title": "AVENGER",
+      "img": "../../assets/avenger.png",
+      "button": "More Details",
+      "detailes": "Avenger",
+      "bracket": "The World best movie",
+      "date": 2008
+    },
+    {
+      "id": 14,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "The Dark Knight",
+      "bracket": "The World best movie",
+      "date": 2005
+    },
+    {
+      "id": 15,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2003
+    },
+    {
+      "id": 16,
+      "movie_title": "BLACJWIDO",
+      "img": "../../assets/blackwido.jpg",
+      "button": "More Details",
+      "detailes": "BlackWideo of the World",
+      "bracket": "The World best movie",
+      "date": 2001
+    },
+    {
+      "id": 17,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 18,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 19,
+      "movie_title": "JOKER",
+      "img": "../../assets/joker.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    },
+    {
+      "id": 20,
+      "movie_title": "SPIDERMAN-3",
+      "img": "../../assets/spider.jpg",
+      "button": "More Details",
+      "detailes": "Spider of the World",
+      "bracket": "The World best movie",
+      "date": 2007
+    }
+  ]
+}
