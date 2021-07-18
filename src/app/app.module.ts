@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import{MoivesListService} from './moives-list.service';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UpcomingComponent } from './upcoming/upcoming.component';
+import { LatestComponent } from './latest/latest.component';
 
 
 
@@ -15,7 +17,9 @@ import {HttpClientModule} from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    UpcomingComponent,
+    LatestComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-export interface movie_list_name{
-  title:string,
-  poster_path:string,
-  release_date:number,
-  overview:string,
-  detailes:string
+export interface MovieListName {
+
+  results: {
+    adult: boolean;
+    backdrop_path: string;
+    genre_ids: number[];
+    id: number;
+    original_language: string;
+    original_title: string;
+    overview: string;
+    popularity: number;
+    poster_path: string;
+    release_date: string;
+    title: string;
+    video: boolean;
+    vote_average: number;
+    vote_count: number;
+  }[];
+  total_pages: number;
+  total_results: number;
 }
+
 import {MoivesListService} from '../moives-list.service';
 
 
@@ -17,14 +32,14 @@ import {MoivesListService} from '../moives-list.service';
 export class HomeComponent implements OnInit {
 
   constructor( private moiveService:MoivesListService) { }
-  movies_name:any=[];
+  movies_name: MovieListName | undefined;
  
   ngOnInit(): void {
-this.moiveService.getMovies().subscribe(result=>{
-  this.movies_name= result;
-  console.log(result);
-  
-});
+    this.moiveService.getMovies().subscribe((result) => {
+      this.movies_name = result;
+      // console.log(this.movies_name.results.poster_path);
+
+    });
 
 
 
