@@ -1,13 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { MoivesListService } from '../moives-list.service';
-
 export interface MovieListName {
-  dates: {
-    maximum: string;
-    minimum: string;
-  };
-  page: number;
   results: {
     adult: boolean;
     backdrop_path: string;
@@ -28,6 +20,8 @@ export interface MovieListName {
   total_results: number;
 }
 
+import { MoivesListService } from '../moives-list.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -38,10 +32,9 @@ export class HomeComponent implements OnInit {
   movies_name: MovieListName | undefined;
 
   ngOnInit(): void {
-    this.moiveService.getMovies(1).subscribe((result) => {
+    this.moiveService.getMovies().subscribe((result) => {
       this.movies_name = result;
       console.log(this.movies_name.results[0].poster_path);
-
     });
   }
 }
