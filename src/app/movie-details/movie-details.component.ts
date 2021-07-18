@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {MoivesListService} from '../moives-list.service';
+import { ActivatedRoute } from '@angular/router';
+import { MoivesListService } from '../moives-list.service';
 import { MovieListName } from '../home/home.component';
 
 @Component({
@@ -14,20 +14,19 @@ export class MovieDetailsComponent implements OnInit {
     private moiveService: MoivesListService
   ) {}
 
-  movieDetails : any | undefined;
+  movieDetails: any | undefined;
 
-  id:any;
+  id: any;
   ngOnInit(): void {
     console.log(this.router.snapshot.params['id']);
-this.id=this.router.snapshot.params['id'];
+    this.id = this.router.snapshot.params['id'];
     this.getOne();
-
   }
 
-  getOne(){
-    this.moiveService.getMoviesId(this.id).subscribe(result=>{
-      this.movieDetails= result;
+  getOne() {
+    this.moiveService.getMoviesId(this.id).subscribe((result) => {
+      this.movieDetails = result;
       console.log(result);
-    })
+    });
   }
 }
