@@ -4,7 +4,8 @@ import { Observable } from 'rxjs';
 import { MovieListName } from './home/home.component';
 import {UpcomingMovies} from './upcoming/upcoming.component';
 import {LatestMovies} from './latest/latest.component'
-
+import { BehaviorSubject } from 'rxjs';
+import{Subject} from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
@@ -29,7 +30,25 @@ latest_url='https://api.themoviedb.org/3/movie/latest?api_key=5f9bfd5ab4dce1dd61
     return this.http.get<LatestMovies>(this.latest_url);
   }
 
+  public movie = new BehaviorSubject<Array<MovieListName>>([])
   getMoviesId(id:number) {
-    return this.http.get('https://api.themoviedb.org/3/movie/now_playing?api_key=5f9bfd5ab4dce1dd61c8ed83e1680d4e&language=en-US&page=1'+id);
+    let item = this.movie.value;
+    console.log()
+
+    return this.http.get(`${this.url}/${id}`);
+
+
   }
+
+  public single_movie = new Subject<any>();
+  // subjectMessageKey$= this.single_movie.asObservable();
+
+  sendKey(message:any){
+    this.single_movie.next(message);
+}
+ 
+
+getMovie_OB(){
+  return this.single_movie.asObservable();
+}
 }
