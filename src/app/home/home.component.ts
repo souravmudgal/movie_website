@@ -28,18 +28,21 @@ import { MoivesListService } from '../moives-list.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor( private moiveService:MoivesListService) { }
+  constructor(private moiveService: MoivesListService) {}
   movies_name: MovieListName | undefined;
 
+  movies: any = [];
   ngOnInit(): void {
     this.moiveService.getMovies().subscribe((result) => {
-      this.movies_name = result;
+      // this.movies_name = result;
+      console.log(result);
+      this.movies = result.results;
+      console.log(this.movies);
       // console.log(this.movies_name.results.poster_path);
-
     });
-
-
-
-
+  }
+  onMovie(film: any) {
+    this.moiveService.sendKey(film);
+    console.log(film);
   }
 }
