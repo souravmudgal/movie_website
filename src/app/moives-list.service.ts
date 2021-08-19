@@ -50,5 +50,6 @@ latest_url='https://api.themoviedb.org/3/movie/latest?api_key=5f9bfd5ab4dce1dd61
 
 getMovie_OB(){
   return this.single_movie.asObservable();
+  
 }
 }
