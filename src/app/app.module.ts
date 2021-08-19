@@ -10,6 +10,10 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { LatestComponent } from './latest/latest.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -19,13 +23,16 @@ import { LatestComponent } from './latest/latest.component';
     HomeComponent,
     MovieDetailsComponent,
     UpcomingComponent,
-    LatestComponent
+    LatestComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     MoivesListService

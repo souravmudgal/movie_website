@@ -4,14 +4,19 @@ import{HomeComponent} from './home/home.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { LatestComponent } from './latest/latest.component';
 import {MovieDetailsComponent } from './movie-details/movie-details.component'
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 const routes: Routes = [
-{path:"",component:HomeComponent},
+{path:"",component:LoginComponent},
 {path:"home",component:HomeComponent},
 {path:"upComing",component:UpcomingComponent},
 {path:"latest",component:LatestComponent},
-{path:"movieDetails/:id",component:MovieDetailsComponent}
+{path:"movieDetails/:id",component:MovieDetailsComponent},
+{path:"login",component:LoginComponent},
+{path:"register",component:RegisterComponent},
+
 
 ];
 
