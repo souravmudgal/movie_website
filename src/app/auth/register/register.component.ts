@@ -1,20 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css'],
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
+  iskiMaaKa: any;
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  async onSubmit(form: NgForm) {
+    this.iskiMaaKa = await this.authService.registerUser(form.value);
 
-  onSubmit(form:NgForm){
-    console.log(form.value);
-    form.reset();
+
+    if (this.iskiMaaKa.user.uid) {
+      this.router.navigate(['/home']);
     }
+
+    form.reset();
+  }
 }

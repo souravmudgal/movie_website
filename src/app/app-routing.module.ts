@@ -6,11 +6,12 @@ import { LatestComponent } from './latest/latest.component';
 import {MovieDetailsComponent } from './movie-details/movie-details.component'
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { AuthGuard } from './guard/auth.guard';
 
 
 const routes: Routes = [
 {path:"",component:LoginComponent},
-{path:"home",component:HomeComponent},
+{path:"home",component:HomeComponent, canActivate:[AuthGuard]},
 {path:"upComing",component:UpcomingComponent},
 {path:"latest",component:LatestComponent},
 {path:"movieDetails/:id",component:MovieDetailsComponent},

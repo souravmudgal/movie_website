@@ -5,7 +5,16 @@
 export const environment = {
   production: false,
   movie_db_base_url: 'https://api.themoviedb.org/3/movie/now_playing',
-  api_key: '5f9bfd5ab4dce1dd61c8ed83e1680d4e'
+  api_key: '5f9bfd5ab4dce1dd61c8ed83e1680d4e',
+  firebaseConfig: {
+    apiKey: 'AIzaSyBIiw39RHxiOrNMNh0z7kwMRCHPAe_blRw',
+    authDomain: 'movie-bbff3.firebaseapp.com',
+    projectId: 'movie-bbff3',
+    storageBucket: 'movie-bbff3.appspot.com',
+    messagingSenderId: '117161792381',
+    appId: '1:117161792381:web:ab8e262e1e4eea20b8f214',
+    measurementId: 'G-3JS2N2S2D7',
+  },
 };
 
 /*

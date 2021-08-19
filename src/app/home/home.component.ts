@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth/service/auth.service';
 export interface MovieListName {
   results: {
     adult: boolean;
@@ -28,7 +30,11 @@ import { MoivesListService } from '../moives-list.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private moiveService: MoivesListService) {}
+  constructor(
+    private moiveService: MoivesListService,
+    private readonly authService: AuthService,
+    private readonly router: Router
+  ) {}
   movies_name: MovieListName | undefined;
 
   movies: any = [];
@@ -37,12 +43,16 @@ export class HomeComponent implements OnInit {
       // this.movies_name = result;
       console.log(result);
       this.movies = result.results;
-      console.log(this.movies);
       // console.log(this.movies_name.results.poster_path);
     });
   }
   onMovie(film: any) {
     this.moiveService.sendKey(film);
-    console.log(film);
+  }
+
+  Logout(event: any) {
+    this.authService.logout().then((value) => {
+      this.router.navigate(['/login']);
+    });
   }
 }
